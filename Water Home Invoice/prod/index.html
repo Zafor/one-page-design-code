@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice - Water Home</title>
+    <style>
+      body {
+        max-width: 842px;
+        /* border: #000 1px solid; */
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px;
+      }
+
+      .header {
+        text-align: center;
+        padding-top: 10px;
+      }
+      .header img {
+        width: 100%;
+      }
+
+      .bill-invoice {
+        display: flex;
+        font-size: 1.2rem;
+      }
+      .bill {
+        margin-left: auto;
+        text-transform: uppercase;
+        background-color: #c7eafc;
+        text-align: center;
+        margin-right: 30px;
+        font-weight: bold;
+        padding: 5px 20px;
+      }
+      .invoice {
+        margin-right: 20px;
+        padding: 5px 20px;
+        text-transform: uppercase;
+        background-color: #c7eafc;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .address-details {
+        margin-top: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .address {
+        width: 50%;
+        background-color: #c7eafc;
+        padding: 5px;
+      }
+
+      .details {
+        width: 30%;
+        background-color: #c7eafc;
+        padding: 5px;
+      }
+      .custom-table {
+        margin-top: 10px;
+        width: 100%;
+      }
+
+      .custom-table thead {
+        text-transform: uppercase;
+        color: #fff;
+      }
+
+      th {
+        background-color: #0066b3;
+      }
+      tr {
+        background-color: #dcddde;
+        height: 1rem;
+        font-weight: bold;
+        text-align: center;
+        font-size: 0.9rem;
+      }
+      .t-one {
+        width: 10%;
+        padding: 5px;
+      }
+      .t-two {
+        width: 50%;
+      }
+      .t-three {
+        width: 10%;
+      }
+      .t-four {
+        width: 15%;
+      }
+      .t-five {
+        width: 15%;
+      }
+
+      .signatures {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .customer-sign {
+        text-align: center;
+        padding-left: 50px;
+      }
+      .manager-sign {
+        text-align: center;
+        padding-right: 50px;
+      }
+      .upper-text {
+        text-transform: uppercase;
+      }
+
+      .footer-image img {
+        width: 100%;
+      }
+      .unit-text-align {
+        text-align: right;
+        padding-right: 5px;
+      }
+
+      .invoice-content {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="header.png" alt="" />
+    </div>
+    <div class="invoice-content">
+      <div class="bill-invoice">
+        <div class="bill"><small>bill</small></div>
+        <div class="invoice"><small>invoice</small></div>
+      </div>
+      <div class="address-details">
+        <div class="address">
+          <p>Customer Address:</p>
+          <p>Phone No.:</p>
+          <p>E-mail:</p>
+        </div>
+        <div class="details">
+          <p>Bill / Invoice No.:</p>
+          <p>Date:</p>
+          <p>Prepared by:</p>
+        </div>
+      </div>
+      <div>
+        <table class="custom-table">
+          <thead>
+            <th class="t-one">sl no.</th>
+            <th class="t-two">item description</th>
+            <th class="t-three">unit</th>
+            <th class="t-four">unit price</th>
+            <th class="t-five">total(bdt)</th>
+          </thead>
+          <tr>
+            <td class="t-one"></td>
+            <td class="t-two"></td>
+            <td class="t-three"></td>
+            <td class="t-four"></td>
+            <td class="t-five"></td>
+          </tr>
+          <tr>
+            <td class="t-one"></td>
+            <td class="t-two"></td>
+            <td class="t-three"></td>
+            <td class="t-four"></td>
+            <td class="t-five"></td>
+          </tr>
+          <tr>
+            <td class="t-one"></td>
+            <td class="t-two"></td>
+            <td class="t-three"></td>
+            <td class="t-four"></td>
+            <td class="t-five"></td>
+          </tr>
+          <tr>
+            <td class="t-one"></td>
+            <td class="t-two"></td>
+            <td class="t-three"></td>
+            <td class="t-four"></td>
+            <td class="t-five"></td>
+          </tr>
+          <tr>
+            <td class="t-one"></td>
+            <td class="t-two"></td>
+            <td class="t-three"></td>
+            <td class="t-four"></td>
+            <td class="t-five"></td>
+          </tr>
+          <tr>
+            <td class="t-one"></td>
+            <td class="t-two"></td>
+            <td class="t-three"></td>
+            <td class="t-four"></td>
+            <td class="t-five"></td>
+          </tr>
+          <tr>
+            <td class="t-one"></td>
+            <td class="t-two"></td>
+            <td class="t-three"></td>
+            <td class="t-four"></td>
+            <td class="t-five"></td>
+          </tr>
+          <tr>
+            <td class="t-one"></td>
+            <td class="t-two"></td>
+            <td class="t-three"></td>
+            <td class="t-four"></td>
+            <td class="t-five"></td>
+          </tr>
+          <tr>
+            <td class="t-one"></td>
+            <td class="t-two"></td>
+            <td class="t-three"></td>
+            <td class="t-four"></td>
+            <td class="t-five"></td>
+          </tr>
+          <tr>
+            <td class="t-one" style="background-color: #fff;"></td>
+            <td class="t-two" style="background-color: #fff;"></td>
+            <td class="t-three" style="background-color: #fff;"></td>
+            <td class="t-four upper-text unit-text-align">sub total</td>
+            <td class="t-five"></td>
+          </tr>
+          <tr>
+            <td class="t-one" style="background-color: #fff;"></td>
+            <td class="t-two" style="background-color: #fff;"></td>
+            <td class="t-three" style="background-color: #fff;"></td>
+            <td class="t-four upper-text unit-text-align">tax/vat</td>
+            <td class="t-five"></td>
+          </tr>
+          <tr>
+            <td class="t-one" style="background-color: #fff;"></td>
+            <td class="t-two" style="background-color: #fff;"></td>
+            <td class="t-three" style="background-color: #fff;"></td>
+            <td class="t-four upper-text unit-text-align">advance</td>
+            <td class="t-five"></td>
+          </tr>
+          <tr>
+            <td class="t-one" style="background-color: #fff;"></td>
+            <td class="t-two" style="background-color: #fff;"></td>
+            <td class="t-three" style="background-color: #fff;"></td>
+            <td class="t-four upper-text unit-text-align">due</td>
+            <td class="t-five"></td>
+          </tr>
+          <tr>
+            <td class="t-five upper-text">in words:</td>
+            <td class="t-two"></td>
+            <td class="t-three" style="background-color: #fff;"></td>
+            <td class="t-four upper-text unit-text-align">grand total</td>
+            <td class="t-five"></td>
+          </tr>
+        </table>
+        <div class="signatures">
+          <div class="customer-sign">
+            <p>__________________</p>
+            <p>Customer Signature</p>
+          </div>
+          <div class="manager-sign">
+            <p>___________________</p>
+            <p>Manager, Water Home</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-image">
+      <img src="footer-img.png" alt="" />
+    </div>
+  </body>
+</html>
