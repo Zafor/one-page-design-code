@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Tabs</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      color: #959595;
+    }
+
+    .tabs {
+      background-color: #fff;
+    }
+
+    .btn {
+      margin-top: 30px;
+      border: none;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      outline: none;
+      padding: 20px;
+      background-color: #fff;
+      position: relative;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .active {
+      background-color: #ebeef5;
+      color: #338ef9;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      font-weight: 600;
+    }
+
+    .curve:before,
+    .curve:after {
+      content: '';
+      position: absolute;
+      height: 10px;
+      width: 20px;
+      bottom: 0;
+    }
+
+    .curve:before {
+      left: -20px;
+      border-radius: 0 0 10px 0;
+      box-shadow: 10px 0 0 0 #ebeef5;
+    }
+
+    .curve:after {
+      right: -20px;
+      border-radius: 0 0 0 10px;
+      box-shadow: -10px 0 0 0 #ebeef5;
+    }
+
+    .content {
+      height: 82vh;
+      background-color: #ebeef5;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="tabs">
+    <button class="btn">Sections</button>
+    <button class="btn active curve">Layouts</button>
+    <button class="btn">Saved</button>
+  </div>
+
+  <div class="content"></div>
+
+  <script>
+    var header = document.getElementById('tabs');
+    var btns = header.getElementsByClassName('btn');
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener('click', function () {
+        var current = document.getElementsByClassName('active');
+        current[0].className = current[0].className.replace(' active curve', '');
+        this.className += ' active curve';
+      });
+    }
+  </script>
+</body>
+
+</html>
